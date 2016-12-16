@@ -9,23 +9,28 @@
     <title></title>
   </head>
   <body>
+
     <script type="text/template" id="wrapper-template">
       <div class="wrapper">
+        <div class="controlls">
+          <input type="text" class="item-value">
+          <button class="item-add">Add</button>
+        </div>
         <ul class="item-list">
           <!-- <li>test <button class="item-delete">X</button></li>
           <li>test <button class="item-delete">X</button></li>
           <li>test <button class="item-delete">X</button></li> class="item-delete" -->
         </ul>
-        <div class="controlls">
-          <input type="text" class="item-value">
-          <button class="item-add">Add</button>
-        </div>
+
       </div>
 
     </script>
+    <div class="bgImg">
+
+    </div>
   <script type="text/template" id="list-template">
 <% for (var i = 0; i < data.length; i++) { %>
-<li><%= data[i] %> <button class="item-delete">X</button></li>
+<li><%= data[i] %> <button data-value= "<%= data[i] %>" class="item-delete">X</button></li>
 <% }; %>
 </script>
 
